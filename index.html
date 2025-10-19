@@ -3,46 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuario.</title>
+    <title>Home</title>
+    <style>
+    body{
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        font-family: sans-serif;
+    }
+    
+    header {
+        grid-area: header;
+        background-color: rgb(167, 175, 199);
+        color: azure;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #a1b6d6;
+        display: flex;
+        flex-direction: column; 
+        align-items: stretch;
+        padding: 0.5rem;
+        gap: 1rem;
+        text-align: left;
+        text-transform: uppercase;
+        overflow-y: auto;
+        max-height: 100%;
+        min-width: 160px;
+        box-sizing: border-box;
+        width: 100%; /* garante que ocupe toda a coluna do grid */
+}
+        
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    nav li {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }  
+    nav a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem;
+        border-radius: 4px;
+        background-color: #407700;
+        text-align: center;
+    } 
+
+    main { 
+        grid-area: main;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: flex-start;
+        
+    }
+    .section {
+        background-color: rgb(155, 155, 172);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1 1 200px;
+        padding: 1rem;
+
+    }
+
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Usuario</h1>
+    </header>
         <nav>
-            <u1>
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="projeto.html">Projeto</a></li>
                 <li><a href="cadastro">Cadastro</a></li>
-            </u1>
+            </ul>
         </nav>
-        <main>
-            <section>
-                <h2>Quem somos</h2>
-                <p>Somos um grupo sem fins lucrativos que entrega alimento a moradores de rua</p>
-                <img src="img/distribuicao-quentinhas-ong-e-por-amor.jpg" alt="Entrega de alimentos">
-            </section>
+    <main>
+        <section>
+            <div class="card"><h2>Quem Somos</h2></div>
+            <p>Somos um grupo sem fins lucrativos que entrega alimento a moradores de rua</p>
+                
+        </section>
             
-            <section>
-                <h2>Missão da ONG Amigos da Humanidade</h2>
-                <p>Prover alimentos, cobertores e roupas para moradores de rua</p>
-            </section>
+        <section>
+            <div class="card"><h2>Missão</h2></div>
+            <p>Prover alimentos, cobertores e roupas para moradores de rua</p>
+        </section>
             
-            <section>
-                <h2>Visão</h2>
-                <p>Ser uma ONG reconhecida por sua transparência e impacto social positivo</p>
-            </section>
-            <section>
-                <h2>Contato com a ONG Amigos da Humanidade</h2>
-                <address>
-                    <p>Endereço: Rua das Orquideas,123 Santo André/SP</p>
-                    <p>Telefone: (11)99999-9999</p>
-                    <p>Email: contato@ongamigosdahumanidade.com.br</p>
-                </address>
-            </section>
-        </main>
-    </header>
-</body>
+        <section>
+            <div class="card"><h2>Visão</h2></div>
+            <p>Ser uma ONG reconhecida por sua transparência e impacto social positivo</p>
+        </section>
+
+        <section>
+            <div class="card"><h2>Contato</h2></div>
+            <address>
+                <p>Endereço: Rua das Orquideas,123 Santo André/SP</p>
+                <p>Telefone: (11)99999-9999</p>
+                <p>Email: contato@ongamigosdahumanidade.com.br</p>
+            </address>
+        </section>
+    </main>
+   
+
 <footer>
     <p>&copy; 2025 ONG Amigos da Humanidade</p>
 </footer>
+</body>
 </html>
