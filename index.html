@@ -4,49 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
-    <header>
-        <h1>Usuario</h1>
-    </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro">Cadastro</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Amigos da Humanidade</h1>
+            </div>
+           <button onclick="animar()" id="btn-menu" >
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span> 
+           </button>
+
+            
+            <div class ="menu">
+                <a href="index.html">Inicio</a>
+                <a href="projetos.html">Projeto</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+        <script>
+            function animar(){
+                const btn = document.getElementById('btn-menu')
+                btn.classList.toggle('ativar')
+            }
+        </script>    
         </nav>
-    <main>
+    
+        <header class = "header">
+            <div class ="headline">
+            <h2 style="letter-spacing: 15px;">Bem-vindo à </h2>
+            <h2 style="font-size: 70px;">ONG Amigos da Humanidade</h2>
+            <p>Junte-se a nós para fazer a diferença na vida dos moradores de rua</p>
+            </div>
+            <div class="header-image">
+                <img style="max-width: 90%;" src="img/ong-alimentos.png" >
+        </header>
         <section>
-            <div class="card"><h2>Quem Somos</h2></div>
-            <p>Somos um grupo sem fins lucrativos que entrega alimento, roupas e cobertores à moradores de rua</p>
-                
-        </section>
+            <h2>Conheça mais sobre nossa ONG</h2>
             
-        <section>
-            <div class="card"><h2>Missão</h2></div>
-            <p>Prover alimentos, cobertores e roupas para moradores de rua</p>
-        </section>
+            <div class="cards-container">
+                <div style="width: 50%;" class="card">
+                    <div class = image>
+                        <img  src="img/team.png" alt="Quem Somos">
+                    </div>
+                    <h3>Quem Somos</h3>
+                    <p>Somos um grupo sem fins lucrativos que entrega alimentos, roupas e cobertores à moradores de rua</p>
+                </div> 
+             
             
-        <section>
-            <div class="card"><h2>Visão</h2></div>
-            <p>Ser uma ONG reconhecida por sua transparência e impacto social positivo</p>
-        </section>
+                <div style="width: 50%;" class="card">
+                    <div class= image> 
+                        <img src="img/target.png" alt="Missão"></div>
+                    <h3>Missão</h3>
+                    <p>Prover marmita, cobertores e roupas para moradores de rua</p>
+                </div>
+        
+       
+                <div style="width: 50%;" class="card">
+                    <div class="image">
+                        <img src="img/eye.png" alt="Visão">                        
+                    </div>
+                    <h3>Visão</h3>
+                    <p>Ser uma ONG reconhecida por sua transparência e impacto social positivo</p>
+                </div>
+        
+        
+                <div style="width: 50%;" class="card">
+                    <div class="image">
+                        <img src="img/phone.png" alt="Contato">
+                    </div>
 
-        <section>
-            <div class="card"><h2>Contato</h2></div>
-            <address>
-                <p>Endereço: Rua das Orquideas,123 Santo André/SP</p>
-                <p>Telefone: (11)99999-9999</p>
-                <p>Email: contato@ongamigosdahumanidade.com.br</p>
-            </address>
+                    <address class="address">
+                    <h3>Contato</h3>
+                        <p>Endereço: Rua das Orquideas,123 Santo André/SP</p>
+                        <p>Telefone: (11)99999-9999</p>
+                    </address>
+                </div>
+        
+            </div> 
         </section>
-    </main>
-   
-
-<footer>
-    <p>&copy; 2025 ONG Amigos da Humanidade</p>
-</footer>
+       
 </body>
+<footer>
+    <p>&copy; 2025 ONG Amigos da Humanidade Todos os direitos reservados</p>
+</footer>
+
 </html>

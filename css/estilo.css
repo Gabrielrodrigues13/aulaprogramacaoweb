@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stack+Sans+Text:wght@200..700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    background-color:rgb(186, 85, 211);
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 15px solid rgb(135, 206, 235);
+}
+.logo{
+    
+    flex: 20%;
+    margin-left: 10%;
+    padding: 0px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.logo h1{
+    text-align: left;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin: 0;
+    font-size: 40px;
+}
+.menu{
+    
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+    /* border: 1px solid green; */
+    
+}
+.menu a{
+    text-decoration: none;
+    color:  white;
+    font-family: 'Stack Sans Text', sans-serif;
+    font-size: 20px;
+    margin-right:10%;
+    
+   
+}
+.menu a:hover{
+    font-weight: bold;
+    border-top: 8px solid rgb(135, 206, 235);
+    border-radius: 9px;
+    border-bottom: 8px solid rgb(135, 206, 235);
+}
+
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(88, 88, 88); */
+}
+
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+    padding: 20px;
+    font-family: 'Stack Sans Text', sans-serif;
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(186, 85, 211);
+    
+    padding: 0;
+    margin: 0;
+    
+}
+.headline p{
+    font-size: 20px;
+    color:gray;
+}
+.header-image{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+    /* border: 1px solid blue; */
+    
+    
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    border: 15px solid rgb(186, 85, 211);
+    padding: 5%
+}
+section h2{
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    font-size: 50px;
+    color: rgb(135, 206, 235);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cards-container{
+    display: inline-block;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+.card{
+    display: inline-block;
+    text-align: center;
+    border: 5px solid rgb(186, 85, 211);
+    width: 32%;
+    padding: 100px;
+    margin: 1%;
+    block-size: auto;
+  
+    
+}
+    
+.card h3{
+    display: inline-block;
+    padding: 0px;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(186, 85, 211);
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.card p{
+    font-family: 'Stack Sans Text', sans-serif;  
+    font-size: 25px;
+    color: gray;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin: 10%;
+    margin-right: 10%;
+    
+
+    
+}
+.address p{
+    font-family: 'Stack Sans Text', sans-serif;  
+    font-size: 22px;
+    color: gray;
+    text-align: center;
+    padding: 0%;
+    margin: 10%;
+    margin-right: 25px;
+    margin-left:  25px;
+    
+}
+footer{
+    background-color: rgb(186, 85, 211);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Stack Sans Text', sans-serif;
+    margin-top: 50px;
+    border-top: 15px solid rgb(135, 206, 235);
+}
+.form {
+    font-family: 'Stack Sans Text', sans-serif;  
+    font-size: 25px;
+    color: gray;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin: 10%;
+    margin-right: 10%;
+    border: 5px solid rgb(186, 85, 211)
+}
+.img{
+    display: inline-block;
+    text-align: center;
+    border: 5px solid rgb(186, 85, 211);
+    border-bottom: 15px solid rgb(135, 206, 235);
+    padding: 10px;
+    margin: 1%;
+    block-size: auto;
+}
+.videos {
+    display: inline-block;
+    text-align: center;
+    border: 5px solid rgb(186, 85, 211);
+    border-bottom: 15px solid rgb(135, 206, 235);
+    padding: 10px;
+    margin: 1%;
+    block-size: auto;
+}
+.donation {
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}
+button {
+        display: none;
+        border: 3px solid rgb(135, 206, 235);
+        border-radius: 10px;
+        background: transparent;
+        cursor: pointer;
+    }
+.linha{
+        display: none;
+        position: relative;
+        height: 3px;
+        background-color: #fff;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transform-origin: center;
+        transition: .2s;
+    }
+button.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: red;
+}
+button.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+    background-color: red;
+}
+button.ativar .linha:nth-child(2){
+    width: 0;
+}

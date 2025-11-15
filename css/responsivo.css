@@ -1,0 +1,47 @@
+@media screen and (max-width:1004px){
+    .navbar{
+        position: relative;
+    }
+    .menu{
+        display: none;
+    }
+    .logo h1{
+        width: 100%;
+        margin:0;
+        text-align: center;
+    }
+    .header{
+        padding-top:50px;
+    }
+    .headline{
+        flex: 100%;
+        margin:5%;
+        text-align: center;
+    }
+    .headline p {
+        text-align: center;
+    }
+    .header img {
+        flex: 100%;
+        margin:5%;
+        text-align: center;
+    }
+    button {
+        display: block;
+        border: 3px solid rgb(135, 206, 235);
+        border-radius: 10px;
+        background: transparent;
+        cursor: pointer;
+    }
+    .linha{
+        position: relative;
+        height: 3px;
+        background-color: #fff;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transform-origin: center;
+        transition: .2s;
+    }
+    
+}
