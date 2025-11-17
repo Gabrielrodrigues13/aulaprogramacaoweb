@@ -9,7 +9,12 @@
 </head>
 <body>
     <header class="navbar">
-        
+         <button onclick="btnAnimar()" id="btn-menu" >
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span> 
+           </button>
+
         <div class="logo">
             <h1>Cadastro de Voluntario</h1>
         </div>
@@ -19,7 +24,11 @@
                 <a href="cadastro.html">Cadastro</a>
         </div>
     </header>
-    <form class="form">
+   <!-- <div class="success-message" id="successMessage">
+        Cadastro realizado com sucesso! Entraremos em contato em breve!
+    </div> -->
+    <form id="volunteerForm" onsubmit="handleSubmit(event)">
+        <fieldset>
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -29,28 +38,32 @@
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required><br><br>
 
-        <label for="cpf">CPF:</label>
-        <input type="mask" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required><br><br>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required><br><br>
-        
-        <label for="senha">Data de Nascimento:</label>
+        <label for="data">Data de Nascimento:</label>
         <input type="date" id="nascimento" name="nascimento" required><br><br>
-
+        
+        <label for="disponibilidade"> Disponibilidade</label>
+        <select id="disponibilidade" name="disponibilidade" required>
+            <option value="">Selecione...</option>
+            <option value="fins-de-semana">Fins de Semana</option>
+            <option value="dias-uteis">Dias úteis</option>
+            <option value="flexivel">Flexivel</option>
+            <option value="pontual">Pontual</option>
+        </select>
+        
         <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" required><br><br>  
+        <input type="text" id="endereco" name="endereco" required><br><br>
 
         <label for="cep">CEP:</label>
         <input type="mask" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required><br><br>
 
         <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required><br><br> 
+        <input type="text" id="cidade" name="cidade" required><br><br>
 
         <label for="estado">Estado:</label>
         <input type="text" id="estado" name="estado" required><br><br>
-
-        <input type="submit" value="Cadastrar">
+    </fieldset>
+        <input class="cadastrar" type="submit" value="Cadastrar">
     </form>
+    <script src="script.js"></script>
 </body>
 </html>

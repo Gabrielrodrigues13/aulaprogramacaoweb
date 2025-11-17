@@ -1,10 +1,16 @@
 @media screen and (max-width:1004px){
+    
     .navbar{
         position: relative;
     }
     .menu{
         display: none;
     }
+   .menu-mobile.abrir{
+    visibility: visible;
+    height: calc(200vh - 120px);
+   }
+}
     .logo h1{
         width: 100%;
         margin:0;
@@ -26,6 +32,38 @@
         margin:5%;
         text-align: center;
     }
+        button {
+        display: block;
+        border: 3px solid rgb(135, 206, 235);
+        border-radius: 10px;
+        background: transparent;
+        cursor: pointer;
+    } 
+     .menu-mobile {
+        display: block;
+        background-color: #0000008c;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 120px;
+        left: 0;;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        overflow: hidden;
+    
+    }
+    .menu-mobile a {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        padding: 20px 30px;
+        font-size: 26px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .menu-mobile a:hover{
+        background-color: rgb(135, 206, 235);
+    }
     button {
         display: block;
         border: 3px solid rgb(135, 206, 235);
@@ -34,6 +72,7 @@
         cursor: pointer;
     }
     .linha{
+        
         position: relative;
         height: 3px;
         background-color: #fff;
@@ -43,5 +82,14 @@
         transform-origin: center;
         transition: .2s;
     }
-    
+    button.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: red;
+}
+    button.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+    background-color: red;
+}
+    button.ativar .linha:nth-child(2){
+    width: 0;
 }
