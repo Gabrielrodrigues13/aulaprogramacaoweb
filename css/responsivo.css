@@ -10,7 +10,7 @@
     visibility: visible;
     height: calc(200vh - 120px);
    }
-}
+
     .logo h1{
         width: 100%;
         margin:0;
@@ -32,13 +32,8 @@
         margin:5%;
         text-align: center;
     }
-        button {
-        display: block;
-        border: 3px solid rgb(135, 206, 235);
-        border-radius: 10px;
-        background: transparent;
-        cursor: pointer;
-    } 
+        
+        
      .menu-mobile {
         display: block;
         background-color: #0000008c;
@@ -53,6 +48,7 @@
         overflow: hidden;
     
     }
+    
     .menu-mobile a {
         color:#fff;
         text-decoration: none;
@@ -64,13 +60,16 @@
     .menu-mobile a:hover{
         background-color: rgb(135, 206, 235);
     }
-    button {
+   button {
         display: block;
         border: 3px solid rgb(135, 206, 235);
         border-radius: 10px;
         background: transparent;
         cursor: pointer;
-    }
+        visibility: visible;
+        position: right;
+    } 
+    
     .linha{
         
         position: relative;
@@ -82,6 +81,9 @@
         transform-origin: center;
         transition: .2s;
     }
+    .linha :hover{
+        background-color: rgb(135, 206, 235);
+    }
     button.ativar .linha:nth-child(1){
     transform: translateY(8px) rotate(-45deg);
     background-color: red;
@@ -92,4 +94,5 @@
 }
     button.ativar .linha:nth-child(2){
     width: 0;
+}
 }

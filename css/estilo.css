@@ -96,7 +96,9 @@ body {
 .menu-mobile {
     display: none;
 }
-
+button {
+    visibility: hidden;
+}
 section{
     display: flex;
     flex-flow: row wrap;
@@ -209,7 +211,7 @@ form {
     border: 5px solid rgb(186, 85, 211)
 }
 .volunteerForm{
-     font-family: 'Stack Sans Text', sans-serif;  
+    font-family: 'Stack Sans Text', sans-serif;  
     font-size: 25px;
     color: gray;
     align-items: center;
@@ -240,36 +242,7 @@ form {
 .donation {
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
-}
-button {
-        display: none;
-        border: 3px solid rgb(135, 206, 235);
-        border-radius: 10px;
-        background: transparent;
-        cursor: pointer;
-    }
-.linha{
-        display: none;
-        position: relative;
-        height: 3px;
-        background-color: #fff;
-        width: 25px;
-        display: block;
-        margin: 5px auto;
-        transform-origin: center;
-        transition: .2s;
-    }
-button.ativar .linha:nth-child(1){
-    transform: translateY(8px) rotate(-45deg);
-    background-color: red;
-}
-button.ativar .linha:nth-child(3){
-    transform: translateY(-8px) rotate(45deg);
-    background-color: red;
-}
-button.ativar .linha:nth-child(2){
-    width: 0;
-} 
+
 
 .cadastrar {
     background-color: rgb(186, 85, 211);
@@ -282,4 +255,5 @@ button.ativar .linha:nth-child(2){
     border-top: 8px solid rgb(135, 206, 235);
     border-radius: 9px;
     border-bottom: 8px solid rgb(135, 206, 235);
+}
 }
